@@ -1,8 +1,8 @@
 ------------------------------------------------
 -- This Source Was Developed By (ALS) @X444F.--
---   This Is The Source Channel @YAK_TEAM .     --
+--   This Is The Source Channel @AAAVAA .     --
 --                 - YAK -                 --
---         -- https://t.me/YAK_TEAM --          --
+--         -- https://t.me/AAAVAA --          --
 ------------------------------------------------ 
 DevALS  = dofile("./YAK-TEAM/redis.lua").connect("127.0.0.1", 6379)
 serpent = dofile("./YAK-TEAM/serpent.lua")
@@ -468,7 +468,7 @@ end
 local List = DevALS:smembers(YAK..'ALS:Groups') 
 local Members = DevALS:smembers(YAK..'ALS:Users')
 local text = "☆︙تم رفع النسخه بنجاح \n☆︙تم رفع ↫ ( "..#Members.." ) مشترك في البوت\n☆︙تم رفع وتفعيل ↫ ( "..#List.." ) مجموعة\n☆︙تم استرجاع مشرفين المجموعات \n☆︙تم استرجاع اوامر القفل والفتح في جميع مجموعات البوت \nꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ"
-local inline = {{{text = '• سـوࢪس دࢪاڪـون •',url='t.me/YAK_TEAM'}},}
+local inline = {{{text = '• سـوࢪس دࢪاڪـون •',url='t.me/AAAVAA'}},}
 msg_id =  msg.id_/2097152/0.5
 SendInline(msg.chat_id_,text,nil,inline,msg_id) 
 end
@@ -704,7 +704,7 @@ end
 function ReplyStatus(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,dp) 
 if dp.first_name_ ~= false then
-local UserName = (dp.username_ or "YAK_TEAM")
+local UserName = (dp.username_ or "AAAVAA")
 for gmatch in string.gmatch(dp.first_name_, "[^%s]+") do
 dp.first_name_ = gmatch
 end
@@ -1072,110 +1072,110 @@ if DataText and DataText:match(tonumber(data.sender_user_id_)..':SetMem:(.*)') t
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':SetMem:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:sadd(YAK..'ALS:VipMem:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم رفعه في قائمة المميزين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم رفعه في قائمة المميزين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':SetCleaner:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':SetCleaner:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:sadd(YAK..'ALS:Cleaner:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم رفعه في قائمة المنظفين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم رفعه في قائمة المنظفين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':SetAdmin:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':SetAdmin:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:sadd(YAK..'ALS:Admins:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم رفعه في قائمة الادمنيه')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم رفعه في قائمة الادمنيه')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':SetManager:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':SetManager:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:sadd(YAK..'ALS:Managers:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم رفعه في قائمة المدراء')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم رفعه في قائمة المدراء')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':SetConstructor:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':SetConstructor:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:sadd(YAK..'ALS:Constructor:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم رفعه في قائمة المنشئين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم رفعه في قائمة المنشئين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':SetBasicConstructor:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':SetBasicConstructor:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:sadd(YAK..'ALS:BasicConstructor:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم رفعه في قائمة المنشئين الاساسيين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم رفعه في قائمة المنشئين الاساسيين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':SetALSConstructor:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':SetALSConstructor:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:sadd(YAK..'ALS:ALSConstructor:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم رفعه في قائمة المالكين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم رفعه في قائمة المالكين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':SetSudoBot:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':SetSudoBot:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:sadd(YAK..'ALS:SudoBot:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم رفعه في قائمة المطورين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم رفعه في قائمة المطورين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':SetSecondSudo:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':SetSecondSudo:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:sadd(YAK..'ALS:SecondSudo:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم رفعه في قائمة المطورين الثانويين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم رفعه في قائمة المطورين الثانويين')
 end,nil)
 end
 if DataText and DataText:match(tonumber(data.sender_user_id_)..':RemMem:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':RemMem:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:srem(YAK..'ALS:VipMem:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم تنزيله من قائمة المميزين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم تنزيله من قائمة المميزين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':RemCleaner:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':RemCleaner:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:srem(YAK..'ALS:Cleaner:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم تنزيله من قائمة المنظفين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم تنزيله من قائمة المنظفين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':RemAdmin:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':RemAdmin:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:srem(YAK..'ALS:Admins:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم تنزيله من قائمة الادمنيه')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم تنزيله من قائمة الادمنيه')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':RemManager:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':RemManager:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:srem(YAK..'ALS:Managers:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم تنزيله من قائمة المدراء')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم تنزيله من قائمة المدراء')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':RemConstructor:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':RemConstructor:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:srem(YAK..'ALS:Constructor:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم تنزيله من قائمة المنشئين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم تنزيله من قائمة المنشئين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':RemBasicConstructor:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':RemBasicConstructor:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:srem(YAK..'ALS:BasicConstructor:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم تنزيله من قائمة المنشئين الاساسيين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم تنزيله من قائمة المنشئين الاساسيين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':RemALSConstructor:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':RemALSConstructor:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:srem(YAK..'ALS:ALSConstructor:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم تنزيله من قائمة المالكين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم تنزيله من قائمة المالكين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':RemSudoBot:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':RemSudoBot:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:srem(YAK..'ALS:SudoBot:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم تنزيله من قائمة المطورين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم تنزيله من قائمة المطورين')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':RemSecondSudo:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':RemSecondSudo:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:srem(YAK..'ALS:SecondSudo:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم تنزيله من قائمة المطورين الثانويين')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم تنزيله من قائمة المطورين الثانويين')
 end,nil)
 end
 if DataText and DataText:match(tonumber(data.sender_user_id_)..':Mute:(.*)') then
@@ -1185,14 +1185,14 @@ if RankChecking(dp.id_, data.chat_id_) then
 EditMsg(Chat_Id2, Msg_Id2,'☆︙لا تستطيع كتم ↫ '..IdRank(dp.id_, data.chat_id_))
 else
 DevALS:sadd(YAK..'ALS:Muted:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم كتمه من المجموعه')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم كتمه من المجموعه')
 end
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':UnMute:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':UnMute:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:srem(YAK..'ALS:Muted:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم الغاء كتمه من المجموعه')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم الغاء كتمه من المجموعه')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':Ban:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':Ban:(.*)')
@@ -1201,14 +1201,14 @@ if RankChecking(dp.id_, data.chat_id_) then
 EditMsg(Chat_Id2, Msg_Id2,'☆︙لا تستطيع حظر ↫ '..IdRank(dp.id_, data.chat_id_))
 else
 DevALS:sadd(YAK..'ALS:Ban:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم حظره من المجموعه')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم حظره من المجموعه')
 end
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':UnBan:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':UnBan:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 DevALS:srem(YAK..'ALS:Ban:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم الغاء حظره من المجموعه')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم الغاء حظره من المجموعه')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':Tked:(.*)') then
 local ALSId = DataText:match(tonumber(data.sender_user_id_)..':Tked:(.*)')
@@ -1218,7 +1218,7 @@ EditMsg(Chat_Id2, Msg_Id2,'☆︙لا تستطيع تقيد ↫ '..IdRank(dp.id_
 else
 https.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..data.chat_id_.."&user_id="..dp.id_)
 DevALS:sadd(YAK..'ALS:Tkeed:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم تقيده من المجموعه')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم تقيده من المجموعه')
 end
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':UnTked:(.*)') then
@@ -1226,7 +1226,7 @@ local ALSId = DataText:match(tonumber(data.sender_user_id_)..':UnTked:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = ALSId},function(arg,dp) 
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..data.chat_id_.."&user_id="..dp.id_.."&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
 DevALS:srem(YAK..'ALS:Tkeed:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n☆︙تم الغاء تقيده من المجموعه')
+EditMsg(Chat_Id2, Msg_Id2,'☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n☆︙تم الغاء تقيده من المجموعه')
 end,nil)
 end
 if DataText and DataText:match(tonumber(data.sender_user_id_)..':SetRtba:(.*)') then
@@ -1236,24 +1236,24 @@ if dp.first_name_ == false then
 Dev_ALS(data.chat_id_, data.id_, 1, "☆︙الحساب محذوف", 1, "md")
 return false  
 end
-local Text = ' ☆︙قم باستعمال الازرار لرفع العضو ↫ ⤈\n☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n✓'
+local Text = ' ☆︙قم باستعمال الازرار لرفع العضو ↫ ⤈\n☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n✓'
 keyboard = {} 
 if Sudo(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..ALSId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetALSConstructor:"..ALSId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..ALSId}},{{text="رفع مطور ثانوي",callback_data=data.sender_user_id_..":SetSecondSudo:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..ALSId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetALSConstructor:"..ALSId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..ALSId}},{{text="رفع مطور ثانوي",callback_data=data.sender_user_id_..":SetSecondSudo:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif SecondSudo(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..ALSId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetALSConstructor:"..ALSId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..ALSId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetALSConstructor:"..ALSId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif SudoBot(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..ALSId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetALSConstructor:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..ALSId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetALSConstructor:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif ALSConstructor(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif BasicConstructor(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Constructor(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..ALSId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Manager(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Admin(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 end 
 https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
@@ -1265,24 +1265,24 @@ if dp.first_name_ == false then
 Dev_ALS(data.chat_id_, data.id_, 1, "☆︙الحساب محذوف", 1, "md")
 return false  
 end
-local Text = ' ☆︙قم باستعمال الازرار لتنزيل العضو ↫ ⤈\n☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n✓'
+local Text = ' ☆︙قم باستعمال الازرار لتنزيل العضو ↫ ⤈\n☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n✓'
 keyboard = {} 
 if Sudo(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..ALSId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemALSConstructor:"..ALSId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..ALSId}},{{text="تنزيل مطور ثانوي",callback_data=data.sender_user_id_..":RemSecondSudo:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..ALSId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemALSConstructor:"..ALSId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..ALSId}},{{text="تنزيل مطور ثانوي",callback_data=data.sender_user_id_..":RemSecondSudo:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif SecondSudo(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..ALSId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemALSConstructor:"..ALSId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..ALSId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemALSConstructor:"..ALSId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif SudoBot(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..ALSId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemALSConstructor:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..ALSId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemALSConstructor:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif ALSConstructor(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif BasicConstructor(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Constructor(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..ALSId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Manager(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Admin(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..ALSId}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 end 
 https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
@@ -1337,7 +1337,7 @@ local Text = [[
 ☆︙م5 ↫ اوامر المطورين
 ☆︙م6 ↫ اوامر الاعضاء
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
@@ -1399,7 +1399,7 @@ local Text = [[
 ☆︙البوتات بالطرد
 ☆︙البوتات بالتقيد
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1469,7 +1469,7 @@ local Text = [[
 ☆︙تقييد يوم + عدد الايام
 ☆︙الغاء تقييد ↫ لالغاء التقييد بالوقت
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1528,7 +1528,7 @@ local Text = [[
 ☆︙ردود المدير • ردود المطور • التحقق
 ☆︙ضافني • حساب العمر • الزخرفه • غنيلي
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1581,7 +1581,7 @@ local Text = [[
 ☆︙المنشئين الاساسيين 
 ☆︙حذف جميع الرتب
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1661,7 +1661,7 @@ local Text = [[
 ☆︙ترحيب البوت • المغادره
 ☆︙البوت الخدمي • التواصل
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1703,7 +1703,7 @@ local Text = [[
 ☆︙تحويل + بالرد ↫ صوره • ملصق • صوت • بصمه
 ☆︙انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1900,19 +1900,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local mrALS = DevALS:get(YAK.."Comd:New:rt:ALS:"..DEV_SoOoFi..msg.chat_id_)
 if mrALS == "مميز" and VipMem(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'YAK_TEAM')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
 DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_SoOoFi) 
 DevALS:sadd(YAK..'ALS:VipMem:'..msg.chat_id_, result.sender_user_id_)
 elseif mrALS == "ادمن" and Admin(msg) then 
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'YAK_TEAM')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
 DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_SoOoFi)
 DevALS:sadd(YAK..'ALS:Admins:'..msg.chat_id_, result.sender_user_id_)
 elseif mrALS == "مدير" and Manager(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'YAK_TEAM')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
 DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_SoOoFi)  
 DevALS:sadd(YAK..'ALS:Managers:'..msg.chat_id_, result.sender_user_id_)
 elseif mrALS == "عضو" then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'YAK_TEAM')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1926,19 +1926,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local mrALS = DevALS:get(YAK.."Comd:New:rt:ALS:"..DEV_SoOoFi..msg.chat_id_)
 if mrALS == "مميز" and VipMem(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'YAK_TEAM')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
 DevALS:srem(YAK..'ALS:VipMem:'..msg.chat_id_, result.sender_user_id_)
 DevALS:del(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrALS == "ادمن" and Admin(msg) then 
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'YAK_TEAM')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
 DevALS:srem(YAK..'ALS:Admins:'..msg.chat_id_, result.sender_user_id_)
 DevALS:del(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrALS == "مدير" and Manager(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'YAK_TEAM')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
 DevALS:srem(YAK..'ALS:Managers:'..msg.chat_id_, result.sender_user_id_)
 DevALS:del(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrALS == "عضو" then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'YAK_TEAM')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1952,19 +1952,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrALS = DevALS:get(YAK.."Comd:New:rt:ALS:"..text1[2]..msg.chat_id_)
 if mrALS == "مميز" and VipMem(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'YAK_TEAM')..')'..' ❩\n☆︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevALS:sadd(YAK..'ALS:VipMem:'..msg.chat_id_, result.id_)
 DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrALS == "ادمن" and Admin(msg) then 
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'YAK_TEAM')..')'..' ❩\n☆︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevALS:sadd(YAK..'ALS:Admins:'..msg.chat_id_, result.id_)
 DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrALS == "مدير" and Manager(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'YAK_TEAM')..')'..' ❩\n☆︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevALS:sadd(YAK..'ALS:Managers:'..msg.chat_id_, result.id_)
 DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrALS == "عضو" then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'YAK_TEAM')..')'..' ❩\n☆︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
 Dev_ALS(msg.chat_id_, msg.id_, 1, "☆︙*المعرف غير صحيح*", 1, 'md')
@@ -1980,19 +1980,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrALS = DevALS:get(YAK.."Comd:New:rt:ALS:"..text1[2]..msg.chat_id_)
 if mrALS == "مميز" and VipMem(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'YAK_TEAM')..')'..' ❩\n☆︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevALS:srem(YAK..'ALS:VipMem:'..msg.chat_id_, result.id_)
 DevALS:del(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrALS == "ادمن" and Admin(msg) then 
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'YAK_TEAM')..')'..' ❩\n☆︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevALS:srem(YAK..'ALS:Admins:'..msg.chat_id_, result.id_)
 DevALS:del(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrALS == "مدير" and Manager(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'YAK_TEAM')..')'..' ❩\n☆︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevALS:srem(YAK..'ALS:Managers:'..msg.chat_id_, result.id_)
 DevALS:del(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrALS == "عضو" then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'YAK_TEAM')..')'..' ❩\n☆︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
 Dev_ALS(msg.chat_id_, msg.id_, 1, "☆︙*المعرف غير صحيح*", 1, 'md')
@@ -2216,7 +2216,7 @@ end
 --     Source YAK     --
 if not SecondSudo(msg) and not DevALS:sismember(YAK..'ALS:Ban:Pv',msg.sender_user_id_) and not DevALS:get(YAK..'ALS:Texting:Pv') then
 tdcli_function({ID="GetUser",user_id_=YAK},function(arg,chat) 
-Dev_ALS(msg.sender_user_id_, msg.id_, 1, '☆︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "YAK_TEAM")..')', 1, 'md') 
+Dev_ALS(msg.sender_user_id_, msg.id_, 1, '☆︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "AAAVAA")..')', 1, 'md') 
 tdcli_function({ID="ForwardMessages",chat_id_=YAK,from_chat_id_= msg.sender_user_id_,message_ids_={[0]=msg.id_},disable_notification_=1,from_background_=1},function(arg,data) 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,dp) 
 if data and data.messages_ and data.messages_[0] ~= false and data.ID ~= "Error" then
@@ -3121,7 +3121,7 @@ Welcomes = '• نورت حبي \n• firstname \n• username'
 end
 local Welcomes = Welcomes:gsub('"',"") Welcomes = Welcomes:gsub("'","") Welcomes = Welcomes:gsub(",","") Welcomes = Welcomes:gsub("*","") Welcomes = Welcomes:gsub(";","") Welcomes = Welcomes:gsub("`","") Welcomes = Welcomes:gsub("{","") Welcomes = Welcomes:gsub("}","") 
 local Welcomes = Welcomes:gsub('firstname',('['..result.first_name_..']' or ''))
-local Welcomes = Welcomes:gsub('username',('[@'..result.username_..']' or '[@YAK_TEAM]'))
+local Welcomes = Welcomes:gsub('username',('[@'..result.username_..']' or '[@AAAVAA]'))
 Dev_ALS(msg.chat_id_, msg.id_, 1, Welcomes, 1, 'md')
 end 
 if DevALS:get(YAK.."ALS:Lock:Welcome"..msg.chat_id_) then
@@ -3169,7 +3169,7 @@ Welcomes = '• نورت حبي \n• firstname \n• username'
 end
 local Welcomes = Welcomes:gsub('"',"") Welcomes = Welcomes:gsub("'","") Welcomes = Welcomes:gsub(",","") Welcomes = Welcomes:gsub("*","") Welcomes = Welcomes:gsub(";","") Welcomes = Welcomes:gsub("`","") Welcomes = Welcomes:gsub("{","") Welcomes = Welcomes:gsub("}","") 
 local Welcomes = Welcomes:gsub('firstname',('['..msg.content_.members_[0].first_name_..']' or ''))
-local Welcomes = Welcomes:gsub('username',('[@'..msg.content_.members_[0].username_..']' or '[@YAK_TEAM]'))
+local Welcomes = Welcomes:gsub('username',('[@'..msg.content_.members_[0].username_..']' or '[@AAAVAA]'))
 Dev_ALS(msg.chat_id_, msg.id_, 1, Welcomes, 1, 'md')
 end
 --     Source YAK     --
@@ -4004,7 +4004,7 @@ name = string.gsub(name,'🎾','🎾')
 name = string.gsub(name,'🏐','🏐')
 name = string.gsub(name,'🏉','🏉')
 name = string.gsub(name,'🎱','🎱')
-name = string.gsub(name,'🏓','🏓')
+name = string.gsub(name,'🏓','??')
 name = string.gsub(name,'🏸','🏸')
 name = string.gsub(name,'🥅','🥅')
 name = string.gsub(name,'🎰','🎰')
@@ -4611,7 +4611,7 @@ Dev_ALS(msg.chat_id_, msg.id_, 1,[[
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
 ☆︙نقاطي • بيع نقاطي
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]], 1, 'md')
 else
 Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙عذرا الالعاب معطله في المجموعه', 1, 'md')
@@ -4639,7 +4639,7 @@ keyboard.inline_keyboard = {
 {{text="🔵 لعبة الالوان 🔴",url='https://t.me/T4TTTTBOT?game=color'}},
 {{text="🚀 لعبة الصاروخ 🚀",url='https://t.me/T4TTTTBOT?game=rocket'},{text="🏹 لعبة السهام 🏹",url='https://t.me/T4TTTTBOT?game=arrow'}},
 {{text="لعبة النينجا",url='https://t.me/gamee?game=GravityNinja21'},{text="لعبة الكرتي",url='https://t.me/gamee?game=KarateKid2'}},
-{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}},
+{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4814,7 +4814,7 @@ local text =  [[☆︙عذࢪاَ ]]..YAK..[[ , آنت لست مشتࢪك
 
 ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ
 ]] 
-local inline = {{{text = '• اضغط هنا للاشتراك •', url="t.me/YAK_TEAM"}}}
+local inline = {{{text = '• اضغط هنا للاشتراك •', url="t.me/AAAVAA"}}}
 fucktele =  msg.id_/2097152/0.5
 SendInline(msg.chat_id_,text,nil,inline,fucktele) 
 return false
@@ -4823,7 +4823,7 @@ local Text =[[
 ⦑ Welcome to Source ⦒
  ⦑ SOURCE YAK ⦒ 
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ 
-☆︙ [Source Channel](t.me/YAK_TEAM)
+☆︙ [Source Channel](t.me/AAAVAA)
 ☆︙ [Source Update ](t.me/FIDRG) 
 ☆︙ [Source developer](t.me/X444F) 
 ☆︙ [Source programmer](t.me/mndzr) 
@@ -4833,11 +4833,11 @@ local Text =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𝐃𝐑𝐀𝐆𝐎𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/YAK_TEAM"},
+{text = '𝐃𝐑𝐀𝐆𝐎𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/AAAVAA"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/YAK_TEAM&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAAVAA&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --     Source YAK     --
 if ChatType == 'sp' or ChatType == 'gp'  then
@@ -4999,7 +4999,7 @@ tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = YAK,offset_ = 0,limit_ =
 if DevText then
 if SoOoFi.photos_[0] then
 keyboard = {} 
-keyboard.inline_keyboard = {{{text=dp.first_name_,url=("t.me/"..dp.username_ or "t.me/YAK_TEAM")}}}
+keyboard.inline_keyboard = {{{text=dp.first_name_,url=("t.me/"..dp.username_ or "t.me/AAAVAA")}}}
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..SoOoFi.photos_[0].sizes_[1].photo_.persistent_id_..'&caption='..URL.escape(DevText).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
@@ -5010,7 +5010,7 @@ if SoOoFi.photos_[0] then
 local bio = GetBio(dp.id_,msg.chat_id_)
 local Text = '☆︙*D𝐞𝐯 N𝐞𝐦𝐚* ↬ '..DevName..'\n☆︙*D𝐞𝐯 U𝐬𝐞𝐫* ↬ ['..DevUser..']\n☆︙*D𝐞𝐯 I𝐝* ↬ ( `'..YAK..'` )'..DevCh..'\n☆︙*D𝐞𝐯 B𝐢𝐨* ↬ ['..bio..']'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text='• '..dp.first_name_..' •',url=("t.me/"..dp.username_ or "t.me/YAK_TEAM")}}}
+keyboard.inline_keyboard = {{{text='• '..dp.first_name_..' •',url=("t.me/"..dp.username_ or "t.me/AAAVAA")}}}
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..SoOoFi.photos_[0].sizes_[1].photo_.persistent_id_..'&caption='..URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
@@ -6082,23 +6082,23 @@ if dp.first_name_ == false then
 Dev_ALS(msg.chat_id_, msg.id_, 1, "☆︙الحساب محذوف", 1, "md")
 return false  
 end
-local Text = ' ☆︙قم باستعمال الازرار لرفع العضو ↫ ⤈\n☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n✓'
+local Text = ' ☆︙قم باستعمال الازرار لرفع العضو ↫ ⤈\n☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n✓'
 if Sudo(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetALSConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text="رفع مطور ثانوي",callback_data=msg.sender_user_id_..":SetSecondSudo:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetALSConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text="رفع مطور ثانوي",callback_data=msg.sender_user_id_..":SetSecondSudo:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif SecondSudo(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetALSConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetALSConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif SudoBot(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetALSConstructor:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetALSConstructor:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif ALSConstructor(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif BasicConstructor(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Constructor(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Manager(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Admin(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 end
 SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5)
 end,nil)
@@ -6116,23 +6116,23 @@ if dp.first_name_ == false then
 Dev_ALS(msg.chat_id_, msg.id_, 1, "☆︙الحساب محذوف", 1, "md")
 return false  
 end
-local Text = ' ☆︙قم باستعمال الازرار لتنزيل العضو ↫ ⤈\n☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n✓'
+local Text = ' ☆︙قم باستعمال الازرار لتنزيل العضو ↫ ⤈\n☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n✓'
 if Sudo(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemALSConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text="تنزيل مطور ثانوي",callback_data=msg.sender_user_id_..":RemSecondSudo:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemALSConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text="تنزيل مطور ثانوي",callback_data=msg.sender_user_id_..":RemSecondSudo:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif SecondSudo(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemALSConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemALSConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif SudoBot(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemALSConstructor:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemALSConstructor:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif ALSConstructor(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif BasicConstructor(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Constructor(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Manager(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 elseif Admin(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_}},{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}}
 end
 SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5)
 end,nil)
@@ -6149,13 +6149,13 @@ if dp.first_name_ == false then
 Dev_ALS(msg.chat_id_, msg.id_, 1, "☆︙الحساب محذوف", 1, "md")
 return false  
 end
-local Text = ' ☆︙قم باستعمال الازرار للتحكم العضو ↫ ⤈\n☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'YAK_TEAM')..')\n✓'
+local Text = ' ☆︙قم باستعمال الازرار للتحكم العضو ↫ ⤈\n☆︙العضو ↫ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'AAAVAA')..')\n✓'
 inline = {
 {{text="رفع رتبه",callback_data=msg.sender_user_id_..":SetRtba:"..result.sender_user_id_},{text="تنزيل رتبه",callback_data=msg.sender_user_id_..":RemRtba:"..result.sender_user_id_}},
 {{text="كتم",callback_data=msg.sender_user_id_..":Mute:"..result.sender_user_id_},{text="الغاء كتم",callback_data=msg.sender_user_id_..":UnMute:"..result.sender_user_id_}},
 {{text="حظر",callback_data=msg.sender_user_id_..":Ban:"..result.sender_user_id_},{text="الغاء حظر",callback_data=msg.sender_user_id_..":UnBan:"..result.sender_user_id_}},
 {{text="تقيد",callback_data=msg.sender_user_id_..":Tked:"..result.sender_user_id_},{text="الغاء تقيد",callback_data=msg.sender_user_id_..":UnTked:"..result.sender_user_id_}},
-{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}}
+{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}}
 }
 SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5)
 end,nil)
@@ -7402,10 +7402,10 @@ end
 tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = dp.id_,offset_ = 0,limit_ = 1},function(extra,SoOoFi,success) 
 if SoOoFi.photos_[0] then
 local bio = GetBio(dp.id_,msg.chat_id_)
-local UserName = (dp.username_ or "YAK_TEAM")
+local UserName = (dp.username_ or "AAAVAA")
 local Text = '☆︙منشئ المجموعه ↫ ['..dp.first_name_..'](T.me/'..UserName..')\n☆︙'..bio..'\nꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text='• '..dp.first_name_..' •',url=("t.me/"..dp.username_ or "t.me/YAK_TEAM")}}}
+keyboard.inline_keyboard = {{{text='• '..dp.first_name_..' •',url=("t.me/"..dp.username_ or "t.me/AAAVAA")}}}
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..SoOoFi.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
@@ -7802,7 +7802,7 @@ if dp.first_name_ == false then
 Dev_ALS(msg.chat_id_, msg.id_, 1, "☆︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "YAK_TEAM")
+local UserName = (dp.username_ or "AAAVAA")
 Dev_ALS(msg.chat_id_, msg.id_, 1, "☆︙تم رفع مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md") 
 DevALS:sadd(YAK.."ALS:ALSConstructor:"..msg.chat_id_,dp.id_)
 end,nil)   
@@ -10043,7 +10043,7 @@ local TXTE = "☆︙اعدادات المجموعه ↫ ⤈\nꔹ┉ ┉ ┉ 𝙔
 .."☆︙زمن التكرار ↫ "..Flood_Num_Time.."\n"
 .."☆︙عدد السبام ↫ "..spam_c.."\n"
 .."ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ \n"
-local inline = {{{text="-𝙔𝙆𝘼",url="t.me/YAK_TEAM"}}}
+local inline = {{{text="-𝙔𝙆𝘼",url="t.me/AAAVAA"}}}
 fucktele =  msg.id_/2097152/0.5
 SendInline(msg.chat_id_,TXTE,nil,inline,fucktele)
 end
@@ -10324,7 +10324,7 @@ if Audios.Info == true then
 local Text ='☆︙تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/YAK_TEAM"}},
+{{text = '• سـوࢪس دࢪاڪـون •',url="t.me/AAAVAA"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id='..msg.chat_id_..'&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -10586,7 +10586,7 @@ local TkeedList = DevALS:scard(YAK.."ALS:ALS:Tkeed:"..ChatId) or 0
 local AdminsList = DevALS:scard(YAK.."ALS:Admins:"..ChatId) or 0
 local VipList = DevALS:scard(YAK.."ALS:VipMem:"..ChatId) or 0
 local LinkGp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..ChatId))
-if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/YAK_TEAM' end
+if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/AAAVAA' end
 tdcli_function({ID ="GetChat",chat_id_=ChatId},function(arg,dp)
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = ChatId:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 if dp.id_ then
@@ -10596,7 +10596,7 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 Manager_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = Manager_id},function(arg,ALS) 
 if ALS.first_name_ ~= false then
-ConstructorALS = "["..ALS.first_name_.."](T.me/"..(ALS.username_ or "YAK_TEAM")..")"
+ConstructorALS = "["..ALS.first_name_.."](T.me/"..(ALS.username_ or "AAAVAA")..")"
 else 
 ConstructorALS = "حساب محذوف"
 end
@@ -11443,7 +11443,7 @@ local Text = [[
 ☆︙م5 ↫ اوامر المطورين
 ☆︙م6 ↫ اوامر الاعضاء
 ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ 
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..msg.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..msg.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..msg.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
@@ -11514,7 +11514,7 @@ local Text = [[
 ☆︙البوتات بالطرد
 ☆︙البوتات بالتقيد
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 Dev_ALS(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -11590,7 +11590,7 @@ local Text = [[
 ☆︙تقييد يوم + عدد الايام
 ☆︙الغاء تقييد ↫ لالغاء التقييد بالوقت
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 Dev_ALS(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -11655,7 +11655,7 @@ local Text = [[
 ☆︙ردود المدير • ردود المطور • التحقق
 ☆︙ضافني • حساب العمر • الزخرفه • غنيلي
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 Dev_ALS(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -11714,7 +11714,7 @@ local Text = [[
 ☆︙المنشئين الاساسيين 
 ☆︙حذف جميع الرتب
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 Dev_ALS(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -11800,7 +11800,7 @@ local Text = [[
 ☆︙ترحيب البوت • المغادره
 ☆︙البوت الخدمي • التواصل
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 Dev_ALS(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -11848,7 +11848,7 @@ local Text = [[
 ☆︙تحويل + بالرد ↫ صوره • ملصق • صوت • بصمه
 ☆︙انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ
-[-𝙔𝙆𝘼](t.me/YAK_TEAM)➤
+[-𝙔𝙆𝘼](t.me/AAAVAA)➤
 ]]
 Dev_ALS(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
@@ -12070,7 +12070,7 @@ Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙لم يتم تعيين قناة الا�
 end end end end
 --     Source YAK     --
 if text == 'القناة' or text == 'قناة السورس' or text == 'قناه السورس' or text == 'قنات السورس' then 
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙Channel ↬ [@YAK_TEAM]', 1, 'md')    
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙Channel ↬ [@AAAVAA]', 1, 'md')    
 end 
 --     Source YAK     --
 if text == 'معلومات السيرفر' or text == 'السيرفر' or text == '↫ السيرفر ☆' then 
@@ -12206,7 +12206,7 @@ end
 end 
 ------------------------------------------------
 -- This Source Was Developed By (ALS) @X444F.--
---   This Is The Source Channel @YAK_TEAM .     --
+--   This Is The Source Channel @AAAVAA .     --
 --                 - YAK -                 --
---         -- https://t.me/YAK_TEAM --          --
+--         -- https://t.me/AAAVAA --          --
 ------------------------------------------------ 
