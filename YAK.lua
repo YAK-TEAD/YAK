@@ -1894,25 +1894,25 @@ end
 end
 
 if text and text:match("رفع (.*)") and tonumber(msg.reply_to_message_id_) > 0 then 
-local DEV_SoOoFi = text:match("رفع (.*)")
-if DevALS:sismember(YAK.."Coomds"..msg.chat_id_,DEV_SoOoFi) then
+local DEV_AlsH = text:match("رفع (.*)")
+if DevALS:sismember(YAK.."Coomds"..msg.chat_id_,DEV_AlsH) then
 function by_reply(extra, result, success)   
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-local mrALS = DevALS:get(YAK.."Comd:New:rt:ALS:"..DEV_SoOoFi..msg.chat_id_)
+local mrALS = DevALS:get(YAK.."Comd:New:rt:ALS:"..DEV_AlsH..msg.chat_id_)
 if mrALS == "مميز" and VipMem(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
-DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_SoOoFi) 
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_AlsH..' ❩ بنجاح', 1, 'md')
+DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_AlsH) 
 DevALS:sadd(YAK..'ALS:VipMem:'..msg.chat_id_, result.sender_user_id_)
 elseif mrALS == "ادمن" and Admin(msg) then 
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
-DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_SoOoFi)
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_AlsH..' ❩ بنجاح', 1, 'md')
+DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_AlsH)
 DevALS:sadd(YAK..'ALS:Admins:'..msg.chat_id_, result.sender_user_id_)
 elseif mrALS == "مدير" and Manager(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
-DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_SoOoFi)  
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_AlsH..' ❩ بنجاح', 1, 'md')
+DevALS:set(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_AlsH)  
 DevALS:sadd(YAK..'ALS:Managers:'..msg.chat_id_, result.sender_user_id_)
 elseif mrALS == "عضو" then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم رفعه ❨ '..DEV_AlsH..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1920,25 +1920,25 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 end
 if text and text:match("تنزيل (.*)") and tonumber(msg.reply_to_message_id_) > 0 then 
-local DEV_SoOoFi = text:match("تنزيل (.*)")
-if DevALS:sismember(YAK.."Coomds"..msg.chat_id_,DEV_SoOoFi) then
+local DEV_AlsH = text:match("تنزيل (.*)")
+if DevALS:sismember(YAK.."Coomds"..msg.chat_id_,DEV_AlsH) then
 function by_reply(extra, result, success)   
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-local mrALS = DevALS:get(YAK.."Comd:New:rt:ALS:"..DEV_SoOoFi..msg.chat_id_)
+local mrALS = DevALS:get(YAK.."Comd:New:rt:ALS:"..DEV_AlsH..msg.chat_id_)
 if mrALS == "مميز" and VipMem(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_AlsH..' ❩ بنجاح', 1, 'md')
 DevALS:srem(YAK..'ALS:VipMem:'..msg.chat_id_, result.sender_user_id_)
 DevALS:del(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrALS == "ادمن" and Admin(msg) then 
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_AlsH..' ❩ بنجاح', 1, 'md')
 DevALS:srem(YAK..'ALS:Admins:'..msg.chat_id_, result.sender_user_id_)
 DevALS:del(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrALS == "مدير" and Manager(msg) then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_AlsH..' ❩ بنجاح', 1, 'md')
 DevALS:srem(YAK..'ALS:Managers:'..msg.chat_id_, result.sender_user_id_)
 DevALS:del(YAK.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrALS == "عضو" then
-Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_SoOoFi..' ❩ بنجاح', 1, 'md')
+Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'AAAVAA')..')'..' ❩\n☆︙تم تنزيله ❨ '..DEV_AlsH..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -2444,10 +2444,10 @@ status = 'ادمن'
 else 
 status = 'عضو'
 end
-tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,SoOoFi) 
-local admins = SoOoFi.members_
+tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,AlsH) 
+local admins = AlsH.members_
 for i=0 , #admins do
-if SoOoFi.members_[i].bot_info_ == false and SoOoFi.members_[i].status_.ID == "ChatMemberStatusEditor" then
+if AlsH.members_[i].bot_info_ == false and AlsH.members_[i].status_.ID == "ChatMemberStatusEditor" then
 DevALS:sadd(YAK..'ALS:Admins:'..msg.chat_id_, admins[i].user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = admins[i].user_id_},function(arg,ba) 
 if ba.first_name_ == false then
@@ -2457,7 +2457,7 @@ end,nil)
 else
 DevALS:sadd(YAK..'ALS:Admins:'..msg.chat_id_, admins[i].user_id_)
 end
-if SoOoFi.members_[i].status_.ID == "ChatMemberStatusCreator" then
+if AlsH.members_[i].status_.ID == "ChatMemberStatusCreator" then
 DevALS:sadd(YAK.."ALS:BasicConstructor:"..msg.chat_id_,admins[i].user_id_)
 DevALS:sadd(YAK.."ALS:ALSConstructor:"..msg.chat_id_,admins[i].user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = admins[i].user_id_},function(arg,ba) 
@@ -3131,13 +3131,13 @@ end
 --      New User Add      --
 elseif msg.content_.ID == "MessageChatAddMembers" then
 if not DevALS:get(YAK..'ALS:Lock:BotWelcome') then 
-tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = YAK,offset_ = 0,limit_ = 1},function(extra,SoOoFi,success) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = YAK,offset_ = 0,limit_ = 1},function(extra,AlsH,success) 
 for i=0,#msg.content_.members_ do    
 BotWelcome = msg.content_.members_[i].id_    
 if BotWelcome and BotWelcome == tonumber(YAK) then 
 if DevALS:sismember(YAK..'ALS:Groups',msg.chat_id_) then BotText = "مفعله في السابق\n☆︙ارسل ↫ الاوامر واستمتع بالمميزيات" else BotText = "معطله يجب رفعي مشرف\n☆︙بعد ذلك يرجى ارسال امر ↫ تفعيل\n☆︙سيتم رفع الادمنيه والمنشئ تلقائيا" end 
 if DevALS:get(YAK.."ALS:Text:BotWelcome") then ALSText = DevALS:get(YAK.."ALS:Text:BotWelcome") else ALSText = "☆︙مرحبا انا بوت اسمي "..NameBot.."\n☆︙حالة المجموعه ↫ "..BotText.."\nꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ" end 
-if DevALS:get(YAK.."ALS:Photo:BotWelcome") then ALSPhoto = DevALS:get(YAK.."ALS:Photo:BotWelcome") elseif SoOoFi.photos_[0] then ALSPhoto = SoOoFi.photos_[0].sizes_[1].photo_.persistent_id_ else ALSPhoto = nil end 
+if DevALS:get(YAK.."ALS:Photo:BotWelcome") then ALSPhoto = DevALS:get(YAK.."ALS:Photo:BotWelcome") elseif AlsH.photos_[0] then ALSPhoto = AlsH.photos_[0].sizes_[1].photo_.persistent_id_ else ALSPhoto = nil end 
 if ALSPhoto ~= nil then
 sendPhoto(msg.chat_id_,msg.id_,0,1,nil,ALSPhoto,ALSText)
 else 
@@ -4658,11 +4658,11 @@ end
 end
 --     Source YAK     --
 if text == 'رفع المشرفين' and ChCheck(msg) or text == 'رفع الادمنيه' and ChCheck(msg) then  
-tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 200},function(arg,SoOoFi) 
+tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 200},function(arg,AlsH) 
 local num = 0
-local admins = SoOoFi.members_  
+local admins = AlsH.members_  
 for i=0 , #admins do   
-if SoOoFi.members_[i].bot_info_ == false and SoOoFi.members_[i].status_.ID == "ChatMemberStatusEditor" then
+if AlsH.members_[i].bot_info_ == false and AlsH.members_[i].status_.ID == "ChatMemberStatusEditor" then
 DevALS:sadd(YAK..'ALS:Admins:'..msg.chat_id_, admins[i].user_id_)   
 num = num + 1
 tdcli_function ({ID = "GetUser",user_id_ = admins[i].user_id_},function(arg,dp) 
@@ -4673,7 +4673,7 @@ end,nil)
 else
 DevALS:srem(YAK..'ALS:Admins:'..msg.chat_id_, admins[i].user_id_)   
 end 
-if SoOoFi.members_[i].status_.ID == "ChatMemberStatusCreator" then  
+if AlsH.members_[i].status_.ID == "ChatMemberStatusCreator" then  
 Manager_id = admins[i].user_id_  
 DevALS:sadd(YAK..'ALS:BasicConstructor:'..msg.chat_id_,Manager_id)  
 DevALS:sadd(YAK..'ALS:ALSConstructor:'..msg.chat_id_,Manager_id)   
@@ -4803,41 +4803,16 @@ DevALS:set(YAK..'ALS:viewget'..msg.sender_user_id_,true)
 Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙حسنا قم باعادة توجيه للمنشور الذي تريدني حساب مشاهداته', 1, 'md')
 end
 --     Source YAK     --
-if text == "السورس" or text == "سورس" or text == "يا سورس" or text == "↫  السورس ☆" then  
-local url,res = https.request('https://api-YAK.tk/Bots/chmeb/chmeb.php?user='..msg.sender_user_id_)
-data = JSON.decode(url)
-if data.result ~= true then
-local YAK = {"حبيبي","؏َـمࢪي","عزيزي","يڪلبي","روحي","حب","حــچي","ضلعي"} 
-local YAK = YAK[math.random(#YAK)]
-local text =  [[☆︙عذࢪاَ ]]..YAK..[[ , آنت لست مشتࢪك
-]]..data.Ch_Member.info..[[
-
-ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ
-]] 
-local inline = {{{text = '• اضغط هنا للاشتراك •', url="t.me/AAAVAA"}}}
-fucktele =  msg.id_/2097152/0.5
-SendInline(msg.chat_id_,text,nil,inline,fucktele) 
-return false
-end
-local Text =[[
-⦑ Welcome to Source ⦒
- ⦑ SOURCE YAK ⦒ 
-ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ 
-☆︙ [Source Channel](t.me/AAAVAA)
-☆︙ [Source Update ](t.me/FIDRG) 
-☆︙ [Source developer](t.me/X444F) 
-☆︙ [Source programmer](t.me/mndzr) 
-ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ 
-𓂅 . [TWS YAK](t.me/S0DRGbot) 
+if text == "سورس" and ChCheck(msg) or text == "السورس" and ChCheck(msg) or text == "يا سورس" and ChCheck(msg) or text == "↫  السورس ☆" and ChCheck(msg) then
+Text = [[
+Welcome To Source
+☆︙[𝚆𝚎𝚕𝚌𝚘𝚖 𝚝𝚘 𝚈𝙰𝙺 ](https://t.me/AAAVAA)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '𝐃𝐑𝐀𝐆𝐎𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/AAAVAA"},
-},
-}
+keyboard.inline_keyboard = {{{text = '☆ Source Channel',url="https://t.me/AAAVAA"}},{{text = '☆ Developer',url="t.me/X444F"},{text = '☆ Tws AAAVAA',url="https://t.me/AAAVAA"}},{{text= '☆ Exp Source .',url="https://t.me/AAAVAA"}}}
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAAVAA&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false
 end
 --     Source YAK     --
 if ChatType == 'sp' or ChatType == 'gp'  then
@@ -4995,24 +4970,24 @@ local DevCh1 = GetInfo.result.username DevCh = '\n☆︙*D𝐞𝐯 C𝐡* ↬ [@
 tdcli_function({ID="GetUser",user_id_=YAK},function(arg,dp) 
 if dp.username_ ~= false then DevUser = '@'..dp.username_ else DevUser = dp.first_name_ end
 local DevName = '['..dp.first_name_..'](tg://user?id='..dp.id_..')'
-tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = YAK,offset_ = 0,limit_ = 1},function(extra,SoOoFi,success) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = YAK,offset_ = 0,limit_ = 1},function(extra,AlsH,success) 
 if DevText then
-if SoOoFi.photos_[0] then
+if AlsH.photos_[0] then
 keyboard = {} 
 keyboard.inline_keyboard = {{{text=dp.first_name_,url=("t.me/"..dp.username_ or "t.me/AAAVAA")}}}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..SoOoFi.photos_[0].sizes_[1].photo_.persistent_id_..'&caption='..URL.escape(DevText).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..AlsH.photos_[0].sizes_[1].photo_.persistent_id_..'&caption='..URL.escape(DevText).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 Dev_ALS(msg.chat_id_, msg.id_, 1,'['..DevText..']', 1, "md")
 end
 else
-if SoOoFi.photos_[0] then
+if AlsH.photos_[0] then
 local bio = GetBio(dp.id_,msg.chat_id_)
 local Text = '☆︙*D𝐞𝐯 N𝐞𝐦𝐚* ↬ '..DevName..'\n☆︙*D𝐞𝐯 U𝐬𝐞𝐫* ↬ ['..DevUser..']\n☆︙*D𝐞𝐯 I𝐝* ↬ ( `'..YAK..'` )'..DevCh..'\n☆︙*D𝐞𝐯 B𝐢𝐨* ↬ ['..bio..']'
 keyboard = {} 
 keyboard.inline_keyboard = {{{text='• '..dp.first_name_..' •',url=("t.me/"..dp.username_ or "t.me/AAAVAA")}}}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..SoOoFi.photos_[0].sizes_[1].photo_.persistent_id_..'&caption='..URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..AlsH.photos_[0].sizes_[1].photo_.persistent_id_..'&caption='..URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 Dev_ALS(msg.chat_id_, msg.id_, 1, Text, 1, "md")
 end
@@ -5143,7 +5118,7 @@ return false
 end 
 local YAK = {"صاࢪࢪ ستاذيي 🏃🏻‍♂️♥️","تأمࢪ آمࢪ","؏ـمـريـہٰ تدلل","شسالفهہ هسههہ اصيحه","هَـسۿ ، פـياتيہ"} 
 Dev_ALS(msg.chat_id_, msg.id_, 1,''..YAK[math.random(#YAK)]..'', 1, 'md') 
-local YAK = {"تتعال ححب محتاجيك🙂🍭","تعال يولل استاذكك ايريدككك😒🔪","يمعوود تعاال يريدوكك🤕♥️","تعال لڪك ديصيحوك😐🖤"} 
+local YAK = {"تتعال ححب محتاجيك🙂🍭","تعال يولل استاذكك ايريدككك😒🔪","يمعوود تعاال يريدوكك??♥️","تعال لڪك ديصيحوك😐🖤"} 
 Dev_ALS(msg.chat_id_, result.id_, 1,''..YAK[math.random(#YAK)]..'', 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
@@ -7399,15 +7374,15 @@ if dp.first_name_ == false then
 Dev_ALS(msg.chat_id_, msg.id_, 1, "☆︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = dp.id_,offset_ = 0,limit_ = 1},function(extra,SoOoFi,success) 
-if SoOoFi.photos_[0] then
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = dp.id_,offset_ = 0,limit_ = 1},function(extra,AlsH,success) 
+if AlsH.photos_[0] then
 local bio = GetBio(dp.id_,msg.chat_id_)
 local UserName = (dp.username_ or "AAAVAA")
 local Text = '☆︙منشئ المجموعه ↫ ['..dp.first_name_..'](T.me/'..UserName..')\n☆︙'..bio..'\nꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ'
 keyboard = {} 
 keyboard.inline_keyboard = {{{text='• '..dp.first_name_..' •',url=("t.me/"..dp.username_ or "t.me/AAAVAA")}}}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..SoOoFi.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..AlsH.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 SendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end
@@ -8455,10 +8430,10 @@ if msg.reply_to_message_id_ ~= 0 then
 return ""
 else
 if text and (text:match("^ايدي$") or text:match("^id$") or text:match("^Id$")) and ChCheck(msg) then
-function YAK(extra,SoOoFi,success)
-if SoOoFi.username_ then username = '@'..SoOoFi.username_ else username = 'لا يوجد' end
+function YAK(extra,AlsH,success)
+if AlsH.username_ then username = '@'..AlsH.username_ else username = 'لا يوجد' end
 if GetCustomTitle(msg.sender_user_id_,msg.chat_id_) ~= false then CustomTitle = GetCustomTitle(msg.sender_user_id_,msg.chat_id_) else CustomTitle = 'لا يوجد' end
-local function getpro(extra, SoOoFi, success) 
+local function getpro(extra, AlsH, success) 
 local msgsday = DevALS:get(YAK..'ALS:UsersMsgs'..YAK..os.date('%d')..':'..msg.chat_id_..':'..msg.sender_user_id_) or 0
 local edit_msg = DevALS:get(YAK..'ALS:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0
 local user_msgs = DevALS:get(YAK..'ALS:UsersMsgs'..msg.chat_id_..':'..msg.sender_user_id_)
@@ -8467,7 +8442,7 @@ local cont = (tonumber(DevALS:get(YAK..'ALS:ContactNumber'..msg.chat_id_..':'..m
 local msguser = tonumber(DevALS:get(YAK..'ALS:UsersMsgs'..msg.chat_id_..':'..msg.sender_user_id_))
 local Texting = {"مو صوره ظيم بالنبي ،🤤💞","مقتنع بصورتك !؟ 😹🖤","ملاك وناسيك بكروبنه ،🤤💞","وفالله ،🤤💞","كشخه برب ،😉🤍","لزكت بيها دغيرها عاد ،😒😕","صورتك مامرتاحلها ،🙄😶","حلغوم والله ،🥺💘","مو صوره غنبله براسها ٦٠ حظ ،😹🤍"}
 local Description = Texting[math.random(#Texting)]
-if SoOoFi.photos_[0] then
+if AlsH.photos_[0] then
 if not DevALS:get(YAK..'ALS:Lock:Id'..msg.chat_id_) then 
 if not DevALS:get(YAK..'ALS:Lock:Id:Photo'..msg.chat_id_) then 
 if DevALS:get(YAK.."ALS:AllIds:Text") then
@@ -8475,7 +8450,7 @@ newpicid = DevALS:get(YAK.."ALS:AllIds:Text")
 newpicid = newpicid:gsub('#username',(username or 'لا يوجد'))
 newpicid = newpicid:gsub('#CustomTitle',(CustomTitle or 'لا يوجد'))
 newpicid = newpicid:gsub('#bio',(GetBio(msg.sender_user_id_) or 'لا يوجد'))
-newpicid = newpicid:gsub('#photos',(SoOoFi.total_count_ or 'لا يوجد')) 
+newpicid = newpicid:gsub('#photos',(AlsH.total_count_ or 'لا يوجد')) 
 newpicid = newpicid:gsub('#game',(user_nkt or 'لا يوجد'))
 newpicid = newpicid:gsub('#edit',(edit_msg or 'لا يوجد'))
 newpicid = newpicid:gsub('#cont',(cont or 'لا يوجد'))
@@ -8489,13 +8464,13 @@ else
 newpicid = "☆︙"..Description.."\n☆︙معرفك ↫ ❨ "..username.." ❩\n☆︙ايديك ↫ ❨ "..msg.sender_user_id_.." ❩\n☆︙رتبتك ↫ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n☆︙رسائلك ↫ ❨ "..user_msgs.." ❩\n☆︙سحكاتك ↫ ❨ "..edit_msg.." ❩\n☆︙تفاعلك ↫ "..formsgs(msguser).."\n☆︙نقاطك ↫ ❨ "..user_nkt.." ❩\nꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ\n"
 end 
 if not DevALS:get(YAK.."ALS:GpIds:Text"..msg.chat_id_) then 
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, SoOoFi.photos_[0].sizes_[1].photo_.persistent_id_,newpicid,msg.id_,msg.id_.."")
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, AlsH.photos_[0].sizes_[1].photo_.persistent_id_,newpicid,msg.id_,msg.id_.."")
 else 
 local new_id = DevALS:get(YAK.."ALS:GpIds:Text"..msg.chat_id_)
 local new_id = new_id:gsub('#username',(username or 'لا يوجد'))
 local new_id = new_id:gsub('#CustomTitle',(CustomTitle or 'لا يوجد'))
 local new_id = new_id:gsub('#bio',(GetBio(msg.sender_user_id_) or 'لا يوجد'))
-local new_id = new_id:gsub('#photos',(SoOoFi.total_count_ or '')) 
+local new_id = new_id:gsub('#photos',(AlsH.total_count_ or '')) 
 local new_id = new_id:gsub('#game',(user_nkt or 'لا يوجد'))
 local new_id = new_id:gsub('#edit',(edit_msg or 'لا يوجد'))
 local new_id = new_id:gsub('#cont',(cont or 'لا يوجد'))
@@ -8505,7 +8480,7 @@ local new_id = new_id:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
 local new_id = new_id:gsub('#auto',(formsgs(msguser) or 'لا يوجد'))
 local new_id = new_id:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 local new_id = new_id:gsub('#Description',(Description or 'لا يوجد'))
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, SoOoFi.photos_[0].sizes_[1].photo_.persistent_id_,new_id,msg.id_,msg.id_.."")
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, AlsH.photos_[0].sizes_[1].photo_.persistent_id_,new_id,msg.id_,msg.id_.."")
 end
 else
 if DevALS:get(YAK.."ALS:AllIds:Text") then
@@ -8513,7 +8488,7 @@ newallid = DevALS:get(YAK.."ALS:AllIds:Text")
 newallid = newallid:gsub('#username',(username or 'لا يوجد'))
 newallid = newallid:gsub('#CustomTitle',(CustomTitle or 'لا يوجد'))
 newallid = newallid:gsub('#bio',(GetBio(msg.sender_user_id_) or 'لا يوجد'))
-newallid = newallid:gsub('#photos',(SoOoFi.total_count_ or 'لا يوجد')) 
+newallid = newallid:gsub('#photos',(AlsH.total_count_ or 'لا يوجد')) 
 newallid = newallid:gsub('#game',(user_nkt or 'لا يوجد'))
 newallid = newallid:gsub('#edit',(edit_msg or 'لا يوجد'))
 newallid = newallid:gsub('#cont',(cont or 'لا يوجد'))
@@ -8533,7 +8508,7 @@ local new_id = DevALS:get(YAK.."ALS:GpIds:Text"..msg.chat_id_)
 local new_id = new_id:gsub('#username',(username or 'لا يوجد'))
 local new_id = new_id:gsub('#CustomTitle',(CustomTitle or 'لا يوجد'))
 local new_id = new_id:gsub('#bio',(GetBio(msg.sender_user_id_) or 'لا يوجد'))
-local new_id = new_id:gsub('#photos',(SoOoFi.total_count_ or 'لا يوجد')) 
+local new_id = new_id:gsub('#photos',(AlsH.total_count_ or 'لا يوجد')) 
 local new_id = new_id:gsub('#game',(user_nkt or 'لا يوجد'))
 local new_id = new_id:gsub('#edit',(edit_msg or 'لا يوجد'))
 local new_id = new_id:gsub('#cont',(cont or 'لا يوجد'))
@@ -8555,7 +8530,7 @@ notpicid = DevALS:get(YAK.."ALS:AllIds:Text")
 notpicid = notpicid:gsub('#username',(username or 'لا يوجد'))
 notpicid = notpicid:gsub('#CustomTitle',(CustomTitle or 'لا يوجد'))
 notpicid = notpicid:gsub('#bio',(GetBio(msg.sender_user_id_) or 'لا يوجد'))
-notpicid = notpicid:gsub('#photos',(SoOoFi.total_count_ or 'لا يوجد')) 
+notpicid = notpicid:gsub('#photos',(AlsH.total_count_ or 'لا يوجد')) 
 notpicid = notpicid:gsub('#game',(user_nkt or 'لا يوجد'))
 notpicid = notpicid:gsub('#edit',(edit_msg or 'لا يوجد'))
 notpicid = notpicid:gsub('#cont',(cont or 'لا يوجد'))
@@ -10692,10 +10667,10 @@ return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp) 
-tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,SoOoFi) 
-local admins = SoOoFi.members_
+tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,AlsH) 
+local admins = AlsH.members_
 for i=0 , #admins do
-if SoOoFi.members_[i].bot_info_ == false and SoOoFi.members_[i].status_.ID == "ChatMemberStatusEditor" then
+if AlsH.members_[i].bot_info_ == false and AlsH.members_[i].status_.ID == "ChatMemberStatusEditor" then
 DevALS:sadd(YAK..'ALS:Admins:'..msg.chat_id_, admins[i].user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = admins[i].user_id_},function(arg,ba) 
 if ba.first_name_ == false then
@@ -10705,7 +10680,7 @@ end,nil)
 else
 DevALS:sadd(YAK..'ALS:Admins:'..msg.chat_id_, admins[i].user_id_)
 end
-if SoOoFi.members_[i].status_.ID == "ChatMemberStatusCreator" then
+if AlsH.members_[i].status_.ID == "ChatMemberStatusCreator" then
 DevALS:sadd(YAK.."ALS:BasicConstructor:"..msg.chat_id_,admins[i].user_id_)
 DevALS:sadd(YAK.."ALS:ALSConstructor:"..msg.chat_id_,admins[i].user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = admins[i].user_id_},function(arg,ba) 
@@ -10836,7 +10811,7 @@ local updatech =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '📂┇𝙳𝚁𝙰𝙶𝙾𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝚂.', url="t.me/FIDRG"}},
+{{text = '𝙔𝘼𝙆.', url="t.me/AAAVAA"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(updatech).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -10853,8 +10828,8 @@ local updatech =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝚂𝙾𝙵𝙸 || صـوفي', url="t.me/X444F"},{text = '› 𝘮𝘶𝘕𝘛𝘢𝘋𝘏𝘦𝘙 ', url="t.me/mndzr"}},
-{{text = 'تواصـل سورس دراكـون 📬', url="t.me/S0DRGbot"}},
+{{text = '𝘔𝘶𝘳𝘵𝘢𝘻𝘢  || رضو ', url="t.me/X444F"},{text = '› 𝘢𝘭𝘴𝘩  ', url="t.me/X444F"}},
+{{text = 'تواصـل سورس  📬', url="t.me/CXRCX"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(updatech).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -12116,11 +12091,11 @@ local ALSname = '☆︙العضو ↫ ['..dp.first_name_..'](tg://user?id='..dp.
 local ALSid = '☆︙ايديه ↫ `'..dp.id_..'`'
 local ALStext = '☆︙قام بالتعديل على '..Media
 local ALStxt = 'ꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ\n☆︙تعالو يامشرفين اكو مخرب'
-tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,SoOoFi) 
-local admins = SoOoFi.members_  
+tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,AlsH) 
+local admins = AlsH.members_  
 text = '\nꔹ┉ ┉ ┉ 𝙔𝘼𝙆┉ ┉ ┉ ┉ꔹ\n'
 for i=0 , #admins do 
-if not SoOoFi.members_[i].bot_info_ then
+if not AlsH.members_[i].bot_info_ then
 tdcli_function ({ID = "GetUser",user_id_ = admins[i].user_id_},function(arg,data) 
 if data.first_name_ ~= false then
 text = text.."~ [@"..data.username_.."]\n"
