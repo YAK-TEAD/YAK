@@ -4804,9 +4804,26 @@ Dev_ALS(msg.chat_id_, msg.id_, 1, '☆︙حسنا قم باعادة توجيه �
 end
 --     Source YAK     --
 if text == "سورس" and ChCheck(msg) or text == "السورس" and ChCheck(msg) or text == "يا سورس" and ChCheck(msg) or text == "↫  السورس ☆" and ChCheck(msg) then
-Text = [[
-Welcome To Source
-☆︙[𝚆𝚎𝚕𝚌𝚘𝚖 𝚝𝚘 𝚈𝙰𝙺 ](https://t.me/AAAVAA)
+local Text =[[
+⦑ Welcome to Source ⦒
+ ⦑ Source WAAD ⦒ 
+ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ 
+⌯︙ [Source Channel](t.me/SrcDrg)
+⌯︙ [Source Update ](t.me/FIDRG) 
+⌯︙ [Source developer](t.me/VvTVv2) 
+⌯︙ [Source programmer](t.me/mndzr) 
+ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ 
+𓂅 . [TWS WAAD](t.me/S0DRGbot) 
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = '𝐃𝐑𝐀𝐆𝐎𝐍 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/SrcDrg"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SrcDrg&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
 ]]
 --     Source YAK     --
 if ChatType == 'sp' or ChatType == 'gp'  then
