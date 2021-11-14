@@ -13247,7 +13247,7 @@ echo '┉ ┉ ┉ .•♫•♬•aLs•♬•♫•.┉ ┉ ┉ ┉\n☆︙مد
 end
 end
 --     Source YAK     --
-Shop_YAk(msg)
+Shop_YAK(msg)
 --     Source YAK     --
 elseif (data.ID == "UpdateMessageEdited") then
 local msg = data
