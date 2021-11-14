@@ -378,7 +378,7 @@ local TextParseMode = {ID = "TextParseModeMarkdown"}
 pcall(tdcli_function ({ID = "SendMessage",chat_id_ = chat_id,reply_to_message_id_ = reply_to_message_id,disable_notification_ = 1,from_background_ = 1,reply_markup_ = nil,input_message_content_ = {ID = "InputMessageText",text_ = text,disable_web_page_preview_ = 1,clear_draft_ = 0,entities_ = {},parse_mode_ = TextParseMode,},}, dl_cb, nil))
 end
 --     Source YAK     --
-function YAKFiles(msg)
+function Files_YAK(msg)
 for v in io.popen('ls Files'):lines() do
 if v:match(".lua$") then
 plugin = dofile("Files/"..v)
@@ -5671,7 +5671,7 @@ DevALS2 = {'😸','☠','🐼','🐇','🌑','🌚','⭐️','📥','⛈','🌥'
 name = DevALS2[math.random(#DevALS2)]
 DevALS:set(YAK..'ALS:GameNum4'..msg.chat_id_,name)
 DevALS:del(YAK..'ALS:Games:Ids'..msg.chat_id_)
-name = string.gsub(name,'😸','😹😹😹😸😹😹😹😹')
+name = string.gsub(name,'😸','😹😹😹😸😹😹??😹')
 name = string.gsub(name,'☠️','💀💀💀☠️💀💀💀💀')
 name = string.gsub(name,'🐼','👻👻👻👻👻👻👻🐼')
 name = string.gsub(name,'🐇','🕊🕊🕊🕊🕊🐇🕊🕊')
@@ -13033,7 +13033,7 @@ end
 send(msg.chat_id_, msg.id_,Files)
 end
 if text == "متجر الملفات" and SecondSudo(msg) and ChCheck(msg) or text == 'المتجر' and ChCheck(msg) and SecondSudo(msg) or text == '↫  المتجر ☆' and ChCheck(msg) and SecondSudo(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/YAK-TEAD/YAKFiles/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/YAK-TEAD/Files_YAK/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -13065,7 +13065,7 @@ end
 if text and text:match("^(تعطيل ملف) (.*)(.lua)$") and ChCheck(msg) and SecondSudo(msg) then
 local FileGet = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/YAK-TEAD/YAKFiles/main/YAKFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/YAK-TEAD/Files_YAK/main/Files_YAK/"..FileName)
 if Res == 200 then
 os.execute("rm -fr Files/"..FileName)
 send(msg.chat_id_, msg.id_,"\n☆︙الملف ↫ *"..FileName.."*\n☆︙تم تعطيله وحذفه من البوت بنجاح") 
@@ -13077,7 +13077,7 @@ end
 if text and text:match("^(تفعيل ملف) (.*)(.lua)$") and ChCheck(msg) and SecondSudo(msg) then
 local FileGet = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/YAK-TEAD/YAKFiles/main/YAKFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/YAK-TEAD/Files_YAK/main/Files_YAK/"..FileName)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..FileName,'w+')
 ChekAuto:write(GetJson)
@@ -13247,7 +13247,7 @@ echo '┉ ┉ ┉ .•♫•♬•aLs•♬•♫•.┉ ┉ ┉ ┉\n☆︙مد
 end
 end
 --     Source YAK     --
-YAKFiles(msg)
+Shop_YAk(msg)
 --     Source YAK     --
 elseif (data.ID == "UpdateMessageEdited") then
 local msg = data
