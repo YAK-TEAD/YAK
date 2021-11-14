@@ -6287,6 +6287,7 @@ if text == "سورس" and ChCheck(msg) or text == "السورس" and ChCheck(msg
 Text = [[
 Welcome To Source
 ☆︙[𝚆𝚎𝚕𝚌𝚘𝚖 𝚝𝚘 𝙱𝚛𝙰𝚗𝚍 𝚃𝚎𝙰𝚖 ](https://t.me/CXRCX)
+☆︙[𝚖𝚞𝚛𝚝𝚊𝚍𝚊 𝚖𝚘𝚑𝚊𝚖𝚖𝚎𝚍](https://t.me/BBBVVBV)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = '☆ Source Channel',url="https://t.me/AAAVAA"}},{{text = '☆ Developer',url="t.me/X444F"},{text = '☆ Tws YAK',url="https://t.me/AAAVAA"}},{{text= '☆ Exp Source .',url="https://t.me/AAAVAA"}}}
@@ -6303,16 +6304,16 @@ return false
 end
 DevALS:set(YAK..'yes'..msg.sender_user_id_, 'delyes')
 DevALS:set(YAK..'no'..msg.sender_user_id_, 'delno')
-local Text = '☆︙هل انت متأكد من المغادره'
+local Text = '☆︙صدك عود. تريد تغادر'
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="نعم",callback_data="/delyes"},{text="لا",callback_data="/delno"}}} 
+keyboard.inline_keyboard = {{{text="ايوالله",callback_data="/delyes"},{text="لا باي",callback_data="/delno"}}} 
 Msg_id = msg.id_/2097152/0.5
 return https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --     Source YAK     --
 if text == 'تعطيل اطردني' and Manager(msg) and ChCheck(msg) then
 DevALS:set(YAK.."ALS:Kick:Me"..msg.chat_id_, true)
-local YAKTeam = '☆︙اهلا عزيزي ↫ '..ALSRank(msg)..' \n☆︙تم تعطيل امر اطردني'
+local YAKTeam = '☆︙اهلا عزيزي ↫ '..ALSRank(msg)..' \n☆︙ايوالله شلون جان غثه'
 ALSmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, YAKTeam, 14, string.len(msg.sender_user_id_))
 end
 if text == 'تفعيل اطردني' and Manager(msg) and ChCheck(msg) then
