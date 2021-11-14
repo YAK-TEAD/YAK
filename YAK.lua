@@ -3557,7 +3557,7 @@ tdcli_function({ID="GetUser",user_id_=DevId},function(arg,dp)
 tdcli_function({ID="GetUser",user_id_=YAK},function(arg,dpbot)
 local inline = {
 {{text="☆ المطور .",url="t.me/"..(dp.username_ or "AAAVAA")}},
-{{text="☆ السورس .",url="https://t.me/AAAVAA"},{text="☆ لتنصيب بوت .",url="https://t.me/EEEEEl"}},{{text="☆ اضفني في مجموعتك .",url="t.me/"..dpbot.username_.."?startgroup=botstart"}}
+{{text="☆ السورس .",url="https://t.me/AAAVAA"},{text="☆ لتنصيب بوت .",url="https://t.me/X444F"}},{{text="☆ اضفني في مجموعتك .",url="t.me/"..dpbot.username_.."?startgroup=botstart"}}
 }
 local start = DevALS:get(YAK.."ALS:Start:Bot")
 if start then 
@@ -6286,7 +6286,7 @@ end
 if text == "سورس" and ChCheck(msg) or text == "السورس" and ChCheck(msg) or text == "يا سورس" and ChCheck(msg) or text == "↫  السورس ☆" and ChCheck(msg) then
 Text = [[
 Welcome To Source
-☆︙[𝚆𝚎𝚕𝚌𝚘𝚖 𝚝𝚘 𝙱𝚛𝙰𝚗𝚍 𝚃𝚎𝙰𝚖 ](https://t.me/AAAVAA)
+☆︙[𝚆𝚎𝚕𝚌𝚘𝚖 𝚝𝚘 𝙱𝚛𝙰𝚗𝚍 𝚃𝚎𝙰𝚖 ](https://t.me/CXRCX)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = '☆ Source Channel',url="https://t.me/AAAVAA"}},{{text = '☆ Developer',url="t.me/X444F"},{text = '☆ Tws YAK',url="https://t.me/AAAVAA"}},{{text= '☆ Exp Source .',url="https://t.me/AAAVAA"}}}
@@ -13216,14 +13216,14 @@ end
 --     Source YAK     --
 if text == "مبرمج السورس" and ChCheck(msg) or text == "مطور السورس" and ChCheck(msg) or text == "وين المبرمج" and ChCheck(msg) or text == "المبرمج" and ChCheck(msg) or text == "↫ مبرمج السورس ☆" and ChCheck(msg) then 
 Text = [[
-☆︙[مبرمج السورس](https://t.me/EEEEEL)
+☆︙[مبرمج السورس](https://t.me/X444F)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '☆ مبرمج السورس',url="t.me/EEEEEL"}},
+{{text = '☆ مبرمج السورس',url="t.me/X444F"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/EEEEEL&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/X444F&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 --     Source YAK     --
