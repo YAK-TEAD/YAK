@@ -6286,8 +6286,8 @@ end
 if text == "سورس" and ChCheck(msg) or text == "السورس" and ChCheck(msg) or text == "يا سورس" and ChCheck(msg) or text == "↫  السورس ☆" and ChCheck(msg) then
 Text = [[
 Welcome To Source
-☆︙[𝚆𝚎𝚕𝚌𝚘𝚖 𝚝𝚘 𝙱𝚛𝙰𝚗𝚍 𝚃𝚎𝙰𝚖 ](https://t.me/CXRCX)
-☆︙[𝚖𝚞𝚛𝚝𝚊𝚍𝚊 𝚖𝚘𝚑𝚊𝚖𝚖𝚎𝚍](https://t.me/BBBVVBV)
+☆︙[𝚆𝚎𝚕𝚌𝚘𝚖 𝚝𝚘 𝙱𝚛𝙰𝚗𝚍 𝚃𝚎𝙰𝚖 ](https://t.me/AAAVAA)
+☆︙[𝚖𝚞𝚛𝚝𝚊𝚍𝚊 𝚖𝚘𝚑𝚊𝚖𝚖𝚎𝚍](https://t.me/X444F)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = '☆ Source Channel',url="https://t.me/AAAVAA"}},{{text = '☆ Developer',url="t.me/X444F"},{text = '☆ Tws YAK',url="https://t.me/AAAVAA"}},{{text= '☆ Exp Source .',url="https://t.me/AAAVAA"}}}
@@ -13357,8 +13357,8 @@ end
 --     Source YAK     --
 end 
 ------------------------------------------------
--- This Source Was Developed By (ALS) @X444F.--
---   This Is The Source Channel @AAAVAA .   --
+-- This Source Was Developed By (ALS) https://t.me/X444F .--
+--   This Is The Source Channel https://t.me/AAAVAA .   --
 --                - YAK -                 --
 --        -- https://t.me/AAAVAA --         --
 ------------------------------------------------   
